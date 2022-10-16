@@ -1,9 +1,15 @@
 10/16/22:
 In progress:
 - Timer view
+	- Update task state (isActive) when clicked
+	- Create new records
+- Records view
+	- Records data model
+- Delete task modal
+	- Prob just confirm and update state
+- Data persistence
+
+Finished:
 - Add task view
 - Edit task view
-- Delete task modal
-- Records view
-- Data persistence
 
