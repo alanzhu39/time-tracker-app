@@ -8,17 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		7E37982528FC3FCB00494526 /* Time_TrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E37982428FC3FCB00494526 /* Time_TrackerApp.swift */; };
-		7E37982728FC3FCB00494526 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E37982628FC3FCB00494526 /* ContentView.swift */; };
-		7E37982928FC3FCD00494526 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E37982828FC3FCD00494526 /* Assets.xcassets */; };
+		7E37982728FC3FCB00494526 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E37982628FC3FCB00494526 /* TimerView.swift */; };
 		7E37982C28FC3FCD00494526 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E37982B28FC3FCD00494526 /* Preview Assets.xcassets */; };
+		7E37983428FC483400494526 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E37983328FC483400494526 /* Theme.swift */; };
+		7E37983628FC485F00494526 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E37983528FC485F00494526 /* Task.swift */; };
+		7E37983828FC516500494526 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E37983728FC516500494526 /* CardView.swift */; };
+		7E37983A28FC581200494526 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E37983928FC581200494526 /* Assets.xcassets */; };
+		7E37983C28FC5A0A00494526 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E37983B28FC5A0A00494526 /* ListView.swift */; };
+		7E37983E28FC6E8F00494526 /* TaskRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E37983D28FC6E8F00494526 /* TaskRecord.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7E37982128FC3FCB00494526 /* Time Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Time Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E37982428FC3FCB00494526 /* Time_TrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time_TrackerApp.swift; sourceTree = "<group>"; };
-		7E37982628FC3FCB00494526 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		7E37982828FC3FCD00494526 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7E37982628FC3FCB00494526 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		7E37982B28FC3FCD00494526 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7E37983328FC483400494526 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		7E37983528FC485F00494526 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		7E37983728FC516500494526 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		7E37983928FC581200494526 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../Downloads/CreatingACardView/Complete/Scrumdinger/Assets.xcassets; sourceTree = "<group>"; };
+		7E37983B28FC5A0A00494526 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		7E37983D28FC6E8F00494526 /* TaskRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRecord.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +61,13 @@
 		7E37982328FC3FCB00494526 /* Time Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				7E37983228FC480F00494526 /* Models */,
 				7E37982428FC3FCB00494526 /* Time_TrackerApp.swift */,
-				7E37982628FC3FCB00494526 /* ContentView.swift */,
-				7E37982828FC3FCD00494526 /* Assets.xcassets */,
+				7E37983728FC516500494526 /* CardView.swift */,
+				7E37983928FC581200494526 /* Assets.xcassets */,
+				7E37982628FC3FCB00494526 /* TimerView.swift */,
 				7E37982A28FC3FCD00494526 /* Preview Content */,
+				7E37983B28FC5A0A00494526 /* ListView.swift */,
 			);
 			path = "Time Tracker";
 			sourceTree = "<group>";
@@ -65,6 +78,16 @@
 				7E37982B28FC3FCD00494526 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7E37983228FC480F00494526 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7E37983328FC483400494526 /* Theme.swift */,
+				7E37983528FC485F00494526 /* Task.swift */,
+				7E37983D28FC6E8F00494526 /* TaskRecord.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E37982C28FC3FCD00494526 /* Preview Assets.xcassets in Resources */,
-				7E37982928FC3FCD00494526 /* Assets.xcassets in Resources */,
+				7E37983A28FC581200494526 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +160,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E37982728FC3FCB00494526 /* ContentView.swift in Sources */,
+				7E37983E28FC6E8F00494526 /* TaskRecord.swift in Sources */,
+				7E37983628FC485F00494526 /* Task.swift in Sources */,
+				7E37983428FC483400494526 /* Theme.swift in Sources */,
+				7E37983C28FC5A0A00494526 /* ListView.swift in Sources */,
+				7E37982728FC3FCB00494526 /* TimerView.swift in Sources */,
 				7E37982528FC3FCB00494526 /* Time_TrackerApp.swift in Sources */,
+				7E37983828FC516500494526 /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
