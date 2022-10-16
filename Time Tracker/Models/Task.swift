@@ -44,4 +44,11 @@ extension Task {
         theme = data.theme
         isActive = data.isActive
     }
+    
+    init(data: Data) {
+        id = UUID()
+        title = data.title
+        theme = data.theme
+        isActive = data.isActive
+    }
 }

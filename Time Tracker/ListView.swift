@@ -10,6 +10,9 @@ import SwiftUI
 struct ListView: View {
     @Binding var tasks: [Task]
     
+    @State private var isPresentingCreateView = false
+    @State private var newTaskData = Task.Data()
+    
     @State private var isPresentingEditView = false
     @State private var taskData = Task.Data()
     
@@ -64,9 +67,31 @@ struct ListView: View {
         }
         .navigationTitle("Tasks")
         .toolbar {
-            Button(action: {}) {
-                // TODO: add task
+            Button(action: {
+                isPresentingCreateView = true
+            }) {
                 Image(systemName: "plus")
+            }
+        }
+        .sheet(isPresented: $isPresentingCreateView) {
+            NavigationView {
+                TaskDetailView(data: $newTaskData)
+                    .toolbar {
+                        ToolbarItem(placement: .cancellationAction) {
+                            Button("Dismiss") {
+                                isPresentingCreateView = false
+                                newTaskData = Task.Data()
+                            }
+                        }
+                        ToolbarItem(placement: .confirmationAction) {
+                            Button("Add") {
+                                let newTask = Task(data: newTaskData)
+                                tasks.append(newTask)
+                                isPresentingCreateView = false
+                                newTaskData = Task.Data()
+                            }
+                        }
+                    }
             }
         }
         
