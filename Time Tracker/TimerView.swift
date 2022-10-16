@@ -11,15 +11,13 @@ struct TimerView: View {
     @Environment(\.presentationMode) var mode: Binding<PresentationMode>
     
     let task: Task
-    @State var startDate = Date()
-    @State var timeInterval = TimeInterval()
+    @State private var timeInterval = TimeInterval()
     
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     let formatter = DateComponentsFormatter()
     
-    init(task: Task, startDate: Date = Date()) {
+    init(task: Task) {
         self.task = task
-        self.startDate = startDate
         formatter.allowedUnits = [.hour, .minute, .second]
         formatter.unitsStyle = .positional
         formatter.zeroFormattingBehavior = .pad
@@ -35,7 +33,7 @@ struct TimerView: View {
                     .accessibilityLabel("Current task")
                 Text("\(formatter.string(from: timeInterval)!)")
                     .onReceive(timer) { input in
-                        timeInterval = input.timeIntervalSince(startDate)
+                        timeInterval = timeInterval + 1
                     }
                     .font(Font.system(size: 55))
                     .accessibilityLabel("Timer")
@@ -59,7 +57,7 @@ struct TimerView: View {
 struct TimerView_Previews: PreviewProvider {
     static var task = Task.sampleData[0]
     static var previews: some View {
-        TimerView(task: task, startDate: Date())
+        TimerView(task: task)
             .background(task.theme.mainColor)
     }
 }

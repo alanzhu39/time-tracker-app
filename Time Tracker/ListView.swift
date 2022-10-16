@@ -17,7 +17,7 @@ struct ListView: View {
         List {
             ForEach($tasks) { $task in
                 ZStack {
-                    NavigationLink(destination: TimerView(task: task, startDate: Date())
+                    NavigationLink(destination: TimerView(task: task)
                             .background(task.theme.mainColor)
                     ) {
                         EmptyView()
