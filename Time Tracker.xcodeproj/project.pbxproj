@@ -13,9 +13,11 @@
 		7E37983428FC483400494526 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E37983328FC483400494526 /* Theme.swift */; };
 		7E37983628FC485F00494526 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E37983528FC485F00494526 /* Task.swift */; };
 		7E37983828FC516500494526 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E37983728FC516500494526 /* CardView.swift */; };
-		7E37983A28FC581200494526 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E37983928FC581200494526 /* Assets.xcassets */; };
 		7E37983C28FC5A0A00494526 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E37983B28FC5A0A00494526 /* ListView.swift */; };
 		7E37983E28FC6E8F00494526 /* TaskRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E37983D28FC6E8F00494526 /* TaskRecord.swift */; };
+		7E37984028FC850A00494526 /* TaskDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E37983F28FC850A00494526 /* TaskDetailView.swift */; };
+		7E37984428FC8A3500494526 /* ThemePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E37984328FC8A3500494526 /* ThemePicker.swift */; };
+		7E37984628FC950900494526 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E37984528FC950900494526 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,9 +28,11 @@
 		7E37983328FC483400494526 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		7E37983528FC485F00494526 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		7E37983728FC516500494526 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
-		7E37983928FC581200494526 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../Downloads/CreatingACardView/Complete/Scrumdinger/Assets.xcassets; sourceTree = "<group>"; };
 		7E37983B28FC5A0A00494526 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		7E37983D28FC6E8F00494526 /* TaskRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRecord.swift; sourceTree = "<group>"; };
+		7E37983F28FC850A00494526 /* TaskDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailView.swift; sourceTree = "<group>"; };
+		7E37984328FC8A3500494526 /* ThemePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemePicker.swift; sourceTree = "<group>"; };
+		7E37984528FC950900494526 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../Downloads/PassingDataWithBindings/Complete/Scrumdinger/Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,10 +68,12 @@
 				7E37983228FC480F00494526 /* Models */,
 				7E37982428FC3FCB00494526 /* Time_TrackerApp.swift */,
 				7E37983728FC516500494526 /* CardView.swift */,
-				7E37983928FC581200494526 /* Assets.xcassets */,
 				7E37982628FC3FCB00494526 /* TimerView.swift */,
 				7E37982A28FC3FCD00494526 /* Preview Content */,
 				7E37983B28FC5A0A00494526 /* ListView.swift */,
+				7E37984328FC8A3500494526 /* ThemePicker.swift */,
+				7E37983F28FC850A00494526 /* TaskDetailView.swift */,
+				7E37984528FC950900494526 /* Assets.xcassets */,
 			);
 			path = "Time Tracker";
 			sourceTree = "<group>";
@@ -148,8 +154,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E37984628FC950900494526 /* Assets.xcassets in Resources */,
 				7E37982C28FC3FCD00494526 /* Preview Assets.xcassets in Resources */,
-				7E37983A28FC581200494526 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,8 +166,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E37984028FC850A00494526 /* TaskDetailView.swift in Sources */,
 				7E37983E28FC6E8F00494526 /* TaskRecord.swift in Sources */,
 				7E37983628FC485F00494526 /* Task.swift in Sources */,
+				7E37984428FC8A3500494526 /* ThemePicker.swift in Sources */,
 				7E37983428FC483400494526 /* Theme.swift in Sources */,
 				7E37983C28FC5A0A00494526 /* ListView.swift in Sources */,
 				7E37982728FC3FCB00494526 /* TimerView.swift in Sources */,

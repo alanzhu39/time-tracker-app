@@ -8,13 +8,16 @@
 import SwiftUI
 
 struct ListView: View {
-    let tasks: [Task]
+    @Binding var tasks: [Task]
+    
+    @State private var isPresentingEditView = false
+    @State private var taskData = Task.Data()
     
     var body: some View {
         List {
-            ForEach(tasks) { task in
+            ForEach($tasks) { $task in
                 ZStack {
-                    NavigationLink(destination: TimerView(task: task)
+                    NavigationLink(destination: TimerView(task: task, startDate: Date())
                             .background(task.theme.mainColor)
                     ) {
                         EmptyView()
@@ -28,12 +31,33 @@ struct ListView: View {
                             .tint(.red)
                         }
                         .swipeActions(allowsFullSwipe: false) {
-                            Button(action: {}) {
-                                // TODO: edit task
+                            Button(action: {
+                                taskData = task.data
+                                isPresentingEditView = true
+                             }) {
                                 Image(systemName: "pencil")
                             }
                             .tint(.yellow)
                         }
+                        .sheet(isPresented: $isPresentingEditView) {
+                            NavigationView {
+                                TaskDetailView(data: $taskData)
+                                    .navigationTitle(task.title)
+                                    .toolbar {
+                                        ToolbarItem(placement: .cancellationAction) {
+                                            Button("Cancel") {
+                                                isPresentingEditView = false
+                                            }
+                                        }
+                                        ToolbarItem(placement: .confirmationAction) {
+                                            Button("Done") {
+                                                isPresentingEditView = false
+                                                task.update(from: taskData)
+                                            }
+                                        }
+                                    }
+                                }
+                            }
                 }
                 .listRowBackground(task.theme.mainColor)
             }
@@ -45,13 +69,14 @@ struct ListView: View {
                 Image(systemName: "plus")
             }
         }
+        
     }
 }
 
 struct ListView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            ListView(tasks: Task.sampleData)
+            ListView(tasks: .constant(Task.sampleData))
         }
     }
 }

@@ -9,10 +9,11 @@ import SwiftUI
 
 @main
 struct Time_TrackerApp: App {
+    @State private var tasks = Task.sampleData
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                ListView(tasks: Task.sampleData)
+                ListView(tasks: $tasks)
             }
         }
     }

@@ -28,4 +28,20 @@ extension Task {
         Task(title: "school", theme: .bubblegum),
         Task(title: "Climb", theme: .seafoam),
     ]
+    
+    struct Data {
+        var title: String = ""
+        var theme: Theme = .seafoam
+        var isActive: Bool = false
+    }
+    
+    var data: Data {
+        Data(title: title, theme: theme, isActive: isActive)
+    }
+    
+    mutating func update(from data: Data) {
+        title = data.title
+        theme = data.theme
+        isActive = data.isActive
+    }
 }
