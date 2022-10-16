@@ -18,6 +18,7 @@
 		7E37984028FC850A00494526 /* TaskDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E37983F28FC850A00494526 /* TaskDetailView.swift */; };
 		7E37984428FC8A3500494526 /* ThemePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E37984328FC8A3500494526 /* ThemePicker.swift */; };
 		7E37984628FC950900494526 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E37984528FC950900494526 /* Assets.xcassets */; };
+		7E37984A28FCA7AC00494526 /* RecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E37984928FCA7AC00494526 /* RecordView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		7E37983F28FC850A00494526 /* TaskDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailView.swift; sourceTree = "<group>"; };
 		7E37984328FC8A3500494526 /* ThemePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemePicker.swift; sourceTree = "<group>"; };
 		7E37984528FC950900494526 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../Downloads/PassingDataWithBindings/Complete/Scrumdinger/Assets.xcassets; sourceTree = "<group>"; };
+		7E37984928FCA7AC00494526 /* RecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				7E37982628FC3FCB00494526 /* TimerView.swift */,
 				7E37982A28FC3FCD00494526 /* Preview Content */,
 				7E37983B28FC5A0A00494526 /* ListView.swift */,
+				7E37984928FCA7AC00494526 /* RecordView.swift */,
 				7E37984328FC8A3500494526 /* ThemePicker.swift */,
 				7E37983F28FC850A00494526 /* TaskDetailView.swift */,
 				7E37984528FC950900494526 /* Assets.xcassets */,
@@ -169,6 +172,7 @@
 				7E37984028FC850A00494526 /* TaskDetailView.swift in Sources */,
 				7E37983E28FC6E8F00494526 /* TaskRecord.swift in Sources */,
 				7E37983628FC485F00494526 /* Task.swift in Sources */,
+				7E37984A28FCA7AC00494526 /* RecordView.swift in Sources */,
 				7E37984428FC8A3500494526 /* ThemePicker.swift in Sources */,
 				7E37983428FC483400494526 /* Theme.swift in Sources */,
 				7E37983C28FC5A0A00494526 /* ListView.swift in Sources */,
